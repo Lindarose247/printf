@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdlib.h>
 
+/************************* PRINT CHAR *************************/
 /**
  * print_char - Prints a char
  * @types: List a of arguments
@@ -18,6 +18,7 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+/************************* PRINT A STRING *************************/
 /**
  * print_string - Prints a string
  * @types: List a of arguments
@@ -94,4 +95,3 @@ int print_percent(va_list types, char buffer[],
 	UNUSED(size);
 	return (write(1, "%%", 1));
 }
-
